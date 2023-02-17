@@ -1,0 +1,17 @@
+<div class="text-bg-warning p-3">Artforms</div>
+<div class="container">
+  <div class="row">
+    <div class="col" *ngFor="let i of artforms">
+      <div class="card" style="width: 18rem;">
+        <img src="../../../assets/img/{{i.image}}" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">{{i.title}}</h5>
+          <p class="card-text">{{i.details}}</p>
+          <button (click)="goToNextPage(i.id)">see more</button>
+        </div> 
+      </div>
+
+    </div>
+
+  </div>
+</div>
